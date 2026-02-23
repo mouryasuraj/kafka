@@ -8,7 +8,7 @@
             2.Consumer: An application that reads messages from Kafka.
             3.Broker: A Kafka server that stores data and serves it to consumers.
             4.Topic: A category or feed name to which messages are sent. Think of it as a channel where data is posted.
-            5.Partition: A topic can be divided into multiple parts, each part is called a partition. This allows Kafka to 6.scale horizontally.
+            5.Partition: A topic can be divided into multiple parts, each part is called a partition. This allows Kafka to scale horizontally.
             7.Offset: A unique identifier for each message within a partition, helping to keep track of which messages have been consumed.
     c. Simple Explanation:
             Imagine Kafka as a giant library:
@@ -36,8 +36,8 @@
                 b. partitions can have index numbers like array.
                 c. Suppose we have four partitions in a topic  and have one consumer so the consumer will consume the data from all the four partition. It work like auto balancing for example if we have four partitions and two consumer then on cosumer take the data from two partition and another from two partitions.
                 d. suppose we have four partition and five consumers then each of the consumer consume data from on partions and fifth one will be idle.
-                e. One consumer can consumer multiple partitions
-                d. but one partions can consumer only one consumer.
+                e. One consumer can consume multiple partitions
+                d. but one partions can consume only one consumer.
             3. Consumer groups:
                 a. In one group, one partitions can have multiple consumers
                 b. kafka is a Queue and pub/sub model. 
